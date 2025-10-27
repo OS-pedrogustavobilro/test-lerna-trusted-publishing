@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   release:
-    name: Publish Canary Release
+    name: Publish to NPM
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
