@@ -25,9 +25,17 @@ jobs:
         with:
           node-version: 22
 
-      - name: Install dependencies
-        run: npm i --ignore-scripts
-            
+      - name: Install PNPM
+        uses: pnpm/action-setup@v4
+        id: pnpm-install
+        with:
+          version: 9
+          run_install: true
+
+      - name: Update npm # To ensure npm 11.5.1 or later is installed for Trusted publishing
+        shell: bash
+        run: npm install -g npm@latest
+
       - name: "Git Config"
         run: |
           git config user.name "Github Workflow (on behalf of ${{ github.actor }})"
