@@ -42,4 +42,4 @@ jobs:
           git config user.email "users.noreply.github.com"  
 
       - name: Publish minor release (using OIDC trusted publishing)
-        run: npm run ci:publish:latest
+        run: pnpm run ci:publish:latest
