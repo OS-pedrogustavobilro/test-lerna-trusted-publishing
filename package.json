@@ -2,7 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "ci:publish:latest": "lerna publish --dist-tag latest --no-verify-access --yes"
+    "ci:publish:latest": "lerna publish --conventional-commits --dist-tag latest --no-verify-access --yes"
   },
   "workspaces": [
     "plugin"
