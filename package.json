@@ -2,7 +2,8 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "ci:publish:latest": "lerna publish --conventional-commits --dist-tag latest --no-verify-access --yes"
+    "ci:publish:latest": "lerna publish --conventional-commits --dist-tag latest --no-verify-access --yes",
+    "ci:publish:dev": "lerna publish prerelease --conventional-commits --conventional-prerelease --preid dev-$(date +\"%Y%m%dT%H%M%S\") --force-publish --no-changelog --no-git-tag-version --dist-tag dev --no-push --yes"
   },
   "workspaces": [
     "plugin"
