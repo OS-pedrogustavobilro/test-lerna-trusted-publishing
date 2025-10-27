@@ -1,0 +1,27 @@
+{
+  "name": "@ospedrobilro/test-lerna-oidc",
+  "version": "0.0.0",
+  "type": "commonjs",
+  "description": "Example of trusted publishing with lerna v9, intentionally functionally useless.",
+  "homepage": "https://github.com/OS-pedrogustavobilro/test-lerna-trusted-publishing",
+  "bugs": {
+    "url": "https://github.com/OS-pedrogustavobilro/test-lerna-trusted-publishing/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OS-pedrogustavobilro/test-lerna-trusted-publishing.git"
+  },
+  "license": "MIT",
+  "author": "OS-PedroGustavoBilro",
+  "main": "src/index.js",
+  "directories": {
+    "lib": "src"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {},
+  "publishConfig": {
+    "access": "public"
+  }
+}

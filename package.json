@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "plugin"
+  ],
+  "devDependencies": {
+    "lerna": "9.0.0"
+  },
+  "volta": {
+    "node": "22.19.0"
+  }
+}
