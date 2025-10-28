@@ -10,6 +10,6 @@ permissions:
 
 jobs:
   call-publish:
-    uses: ./.github/workflows/reusable_publish_dev.yml
+    uses: ./.github/workflows/reusable-publish.yml
     secrets:
       MY_GH_RELEASE_TOKEN: ${{ secrets.MY_GH_RELEASE_TOKEN }}
