@@ -1,6 +1,6 @@
 "use strict";
 
 module.exports = () => {
-  // comment
+  // comment 2
   console.log("Hello world");
 };
