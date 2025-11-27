@@ -41,7 +41,7 @@ jobs:
           git config user.name "Github Workflow (on behalf of ${{ github.actor }})"
           git config user.email "users.noreply.github.com"
 
-      - name: Publish dev release (using OIDC trusted publishing)
+      - name: Publish release (using OIDC trusted publishing)
         env:
           GH_TOKEN: ${{ secrets.MY_GH_RELEASE_TOKEN }}
-        run: pnpm run ci:publish:dev
+        run: pnpm run ci:publish:latest
